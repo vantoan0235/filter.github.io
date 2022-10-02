@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/fontawesome-free-6.1.1-web/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+
+      <!-- ===== Boxicons CSS ===== -->
+      <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+<style>
+       #filter_button{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.btn {
+    display: flex;
+    border-radius: 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 5px;
+    height: 28px;
+    text-align: center;
+    display: block;
+    width: calc(100%/8);
+    background: palegoldenrod!important;
+    border: 1px solid palegoldenrod!important;
+}
+
+
+
+.actives {
+    background: #EE4D2D!important;
+    transition: 0,7s linear;
+    color: white;
+}
+</style>
+</head>
+<body>
+    
+    <div id="filter_button">     
+        <a class="btn btn-primary actives" data-filter="all">All</a>
+        <!-- <a class="btn btn-primary" data-filter="price">Price</a> -->
+        <a class="btn btn-primary" data-filter="cakes">Cakes</a>
+        <a class="btn btn-primary" data-filter="cupcakes">Cupcakes</a>
+        <a class="btn btn-primary" data-filter="sweets">Sweets</a>
+        <a class="btn btn-primary" data-filter="doughnuts">Doughnuts</a>
+   </div>
+
+
+    <section id="product1">
+        <h2>Featured Products</h2>
+        <p>Summer Collection New Morden Design</p>
+        <div class="pro-container">
+    
+            <div class="pro" data-item="cupcakes" onclick="window.location.href='sproduct.html';">  
+                <img src="img/products/f1.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5 class="name_item">cupcakes</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="price">$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+
+                
+            <div class="pro" data-item="sweets" onclick="window.location.href='sproduct.html';">
+                <img src="img/products/f2.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5  class="name_item">Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="price">$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            <div class="pro"  onclick="window.location.href='sproduct.html';"  data-item="sweets">
+                <img src="img/products/f3.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            <div class="pro" data-item="cupcakes" onclick="window.location.href='sproduct.html';">
+                <img src="img/products/f4.jpg" alt="">
+                <div class="des">
+                    <span>adidas</span>
+                    <h5>Cartoon Astronaut T-Shirts</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                </div>
+            
+        </div>
+    </section>
+
+    <h1 id="showtext"></h1>
+</div>
+ <script src="script.js"></script>
+</body>
+</html>
